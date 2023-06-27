@@ -1,0 +1,74 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+
+li {
+    display: flex;
+    display: inline;
+    padding-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+li:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    margin-right: 100px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: rgb(122, 122, 122);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: background 0.4s;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: rgb(165, 165, 165);
+    transform: scale(1.1);
+
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    background: rgb(240, 240, 240);
+}
+
+
