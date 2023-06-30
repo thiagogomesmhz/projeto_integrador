@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Viver Bem</title>
 </head>
 <body>
     <header class="menu"> 
         <Nav>
             <ul style="list-style: none;">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="pg_desperdicio.html">DESPERDÍCIO</a></li>
-                <li><a href="pg_reaproveitar.html">REAPROVEITAMENTO</a></li>
-                <li><a href="receitas.html">RECEITAS</a></li>
+                <li><a class="a" href="index.html">HOME</a></li>
+                <li><a class="a" href="pg_desperdicio.html">DESPERDÍCIO</a></li>
+                <li><a class="a" href="pg_reaproveitar.html">REAPROVEITAMENTO</a></li>
+                <li><a class="a" href="receitas.html">RECEITAS</a></li>
             </ul>
         </Nav>
         <h1>VIVER BEM</h1>
-        <button>CONTATO</button>
+        <div class="dropdown">
+            <button class="dropdown-btn">CONTATO</button>
+            <div class="dropdown-content">
+              <a target="_blank" href="https://www.facebook.com">Facebook</a>
+              <a target="_blank" href="https://www.instagram.com">Instagram</a>
+              <a target="_blank" href="https://www.twitter.com">Twitter</a>
+            </div>
+          </div>
     </header>
     <main>
         <div>
@@ -51,18 +59,30 @@
 
                 </p>
                 <h2>MUDE SEUS HABITOS PARA CUIDAR DO PLANETA</h2>
-                <p>
-                    Em um mundo cada vez mais preocupado com as questões ambientais, é fundamental que todos nós façamos nossa parte para cuidar do planeta. Uma maneira eficaz de contribuir para um futuro sustentável é mudar nossos hábitos diários. Pequenas ações podem fazer uma grande diferença quando se trata de preservar o meio ambiente.
-                </p>
-                <p>
-                    A forma como nos alimentamos e tratamos os alimentos desempenha um papel crucial não apenas em nossa saúde, mas também na saúde do planeta. Nossas escolhas alimentares e práticas relacionadas podem ter um impacto significativo no meio ambiente.
-                </p>
+                <div class="paragrafos">
+                    <p>
+                        Em um mundo cada vez mais preocupado com as questões ambientais, é fundamental que todos nós façamos nossa parte para cuidar do planeta. Uma maneira eficaz de contribuir para um futuro sustentável é mudar nossos hábitos diários. Pequenas ações podem fazer uma grande diferença quando se trata de preservar o meio ambiente.
+                    </p>
+                    <p>
+                        A forma como nos alimentamos e tratamos os alimentos desempenha um papel crucial não apenas em nossa saúde, mas também na saúde do planeta. Nossas escolhas alimentares e práticas relacionadas podem ter um impacto significativo no meio ambiente.
+                    </p>
+                </div>
             </aside>
         </div>
     </main>
-    <footer>
-        <img src="img/pg_1/img_rodape.jpg" alt="Imagem de casca de banana" width="300px">
-        <a href="index.html">www.viverbem.com.br</a>
+    <footer class="footer">
+        <a href="index.html" class="link">www.viverbem.com.br</a>
+        <ul>
+            <li>
+                <a class="a" target="blank" href = "https://www.facebook.com/"> <img src="img/pg_1/face.jpg" width="16px">FACEBOOK</a>
+            </li>
+            <li>
+                <a class="a" target="blank" href="https://www.instagram.com/"><img src="img/pg_1/instagram.jpg" width="15px"> INSTAGRAM </a>
+            </li>
+            <li>
+                <a class="a" target="blank" href="https://twitter.com/"> <img src="img/pg_1/twitter.jpg" width="20px"> TWITTER </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
