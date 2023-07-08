@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Viver Bem</title>
 </head>
 <body>
-    <header> 
+    <div class="title">
+        <h1>VIVER BEM</h1>
+    </div> 
+    <header class="menu"> 
         <Nav>
             <ul style="list-style: none;">
                 <li><a href="index.html">Home</a></li>
@@ -16,8 +20,14 @@
                 <li><a href="receitas.html">Receitas</a></li>
             </ul>
         </Nav>
-        <h1>Viver Bem</h1>
-        <button>CONTATO</button>
+        <div class="dropdown">
+            <button class="dropdown-btn">CONTATO</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://www.facebook.com">Facebook</a>
+                <a target="_blank" href="https://www.instagram.com">Instagram</a>
+                <a target="_blank" href="https://www.twitter.com">Twitter</a>
+            </div>
+        </div>        
     </header>
     <main>
         <div>
@@ -39,10 +49,12 @@
                 </p>
             </aside>
         </div>
+        <div>
+            <img class="footer-img" src="img/pg_5/rodape_pg5.jpg" alt="Imagem de casaca de banana">
+        </div>
     </main>
-    <footer>
-        <img src="img/pg_5/rodape_pg5.jpg" alt="Imagem de casaca de banana" width="200px">
-        <a href="index.html">www.viverbem.com.br</a>
+    <footer>        
+        <a href="index.html" class="link">www.viverbem.com.br</a>
     </footer> 
 </body>
 </html>

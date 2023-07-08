@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Viver Bem</title>
 </head>
 <body>
-    <header> 
+    <div class="title">
+        <h1>VIVER BEM</h1>
+    </div> 
+    <header class="menu"> 
         <Nav>
             <ul style="list-style: none;">
                 <li><a href="index.html">Home</a></li>
@@ -16,27 +20,50 @@
                 <li><a href="receitas.html">Receitas</a></li>
             </ul>
         </Nav>
-        <h1>Viver Bem</h1>
-        <button>CONTATO</button>
+        <div class="dropdown">
+            <button class="dropdown-btn">CONTATO</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://www.facebook.com">Facebook</a>
+                <a target="_blank" href="https://www.instagram.com">Instagram</a>
+                <a target="_blank" href="https://www.twitter.com">Twitter</a>
+            </div>
+        </div>        
     </header>
     <main>
         <div>
             <aside>
                 <h2>
                     VC SABIA QUE O BRASIL É UM DOS PAÍSES QUE MAIS DESPERDIÇA?
-                </h2>
-                <figure>
-                    <img src="img/pg_2/img.jpg" alt="Imagem de desperdicio de alimentos" width="400px">
-                </figure>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi, perspiciatis amet earum, vitae quam nihil vero, fugiat explicabo fugit provident eaque quo in deleniti quae repudiandae inventore neque? Labore.
-                </p>
+                </h2>                
+                <div class="paragrafos">
+                    <p>
+                        <figure>
+                            <img src="img/pg_2/img.jpg" alt="Imagem de desperdicio de alimentos">
+                        </figure>
+                    </p>
+                    <p>
+                        O Brasil produz muito, e para o mundo todo, porém, faz parte da lista dos que mais desperdiçam no mundo ocupando o 10° lugar. Tendo 30% de sua produção jogada fora,  ou seja; 46 milhões de toneladas por ano.
+                        <br></br>
+                        O desperdício de alimentos acontecem nas seguintes etapas:
+                        <br></br>
+                        <strong>Produção:</strong>
+                        <br></br>                    
+                        Na produção, os alimentos costumam ser desperdiçados pela falta de planejamento, falta de estrutura adequada e os problemas climáticos. São descartados devidos a padrões de exigências, aparência estética e problemas na logistica.
+                        <br></br>
+                        <strong>Consumo: </strong>
+                        <br></br>                   
+                        Devido a compra excessivas,mal planejamento de refeição e descuido com a conservação.                    
+                        Desperdiçando alimentos, contribuindo para a degradação do meio ambiente, para a fome e a pobresa em diversas regiões do país além de uma perda econômica.
+                    </p>
+                </div>
             </aside>
+        </div>
+        <div>
+            <img class="footer-img" src="img/pexels-sarah-chai-7262348.jpg" alt="Imagem de casca de banana sendo jogada no lixo">
         </div>
     </main>
     <footer>
-        <img src="img/pg_2/rodape_pg2.jpg" alt="Imagem de casca de banana sendo jogada no lixo" width="400px">
-        <a href="index.html">www.viverbem.com.br</a>
+        <a href="index.html" class="link">www.viverbem.com.br</a>
     </footer>
 </body>
 </html>
