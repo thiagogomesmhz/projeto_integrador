@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="script.js" defer></script>
     <title>Viver Bem</title>
 </head>
@@ -11,23 +12,23 @@
     <div class="title">
         <h1>VIVER BEM</h1>
     </div> 
-    <header class="menu"> 
+    <header> 
         <Nav>
-            <ul style="list-style: none;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pg_desperdicio.html">Desperdício</a></li>
-                <li><a href="pg_reaproveitar.html">Reaproveitamento</a></li>
-                <li><a href="receitas.html">Receitas</a></li>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pg_desperdicio.html">DESPERDÍCIO</a></li>
+                <li><a href="pg_reaproveitar.html">REAPROVEITAMENTO</a></li>
+                <li><a href="receitas.html">RECEITAS</a></li>
             </ul>
-        </Nav>
-        <div class="dropdown">
-            <button class="dropdown-btn">CONTATO</button>
-            <div class="dropdown-content">
-                <a target="_blank" href="https://www.facebook.com">Facebook</a>
-                <a target="_blank" href="https://www.instagram.com">Instagram</a>
-                <a target="_blank" href="https://www.twitter.com">Twitter</a>
-            </div>
-        </div>        
+            <ul class="menu menu-right dropdown">
+                <li class="dropdown-btn"><a>CONTATO</a></li>
+                <div class="dropdown-content">
+                  <a target="_blank" href="https://www.facebook.com">Facebook</a>
+                  <a target="_blank" href="https://www.instagram.com">Instagram</a>
+                  <a target="_blank" href="https://www.twitter.com">Twitter</a>
+                </div>
+            </ul>
+        </Nav>                       
     </header>
     <main>
         <div>
@@ -35,22 +36,69 @@
                 <h2>
                     RECEITA SUSTENTÁVEL 
                 </h2>
-                <figure>
-                    <img src="img/pg_5/img_1.jpg" alt="Imagem de banana picada" width="300px">
-                    <img src="img/pg_5/img_2.jpg" alt="Imagem de bolo de banana" width="300px">
-                    <img src="img/pg_5/img_3.jpg" alt="Imagem de banana" width="300px">
-                </figure>
-                <h1>BOLO</h1>
-                <h2>Casca de Banana</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi, perspiciatis amet earum, vitae quam nihil vero, fugiat explicabo fugit provident eaque quo in deleniti quae repudiandae inventore neque? Labore.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolorum, ipsa blanditiis ipsam omnis minus facilis reprehenderit iste vero exercitationem et placeat quia voluptate fuga perferendis, incidunt fugiat nam neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis itaque neque, dicta nesciunt exercitationem ipsa repellendus. Excepturi praesentium accusamus temporibus, expedita tenetur id assumenda exercitationem ipsam a facilis corporis!
-                </p>
+                <div class="img-responsive">
+                    <figure class="img-gallery">
+                        <img src="img/pg_5/img_1.jpg" alt="Imagem de banana picada" width="300px" height="300px">
+                    </figure>      
+                </div>
+                <div class="img-responsive">
+                    <figure class="img-gallery">
+                        <img src="img/pg_5/img_2.jpg" alt="Imagem de bolo de banana" width="300px" height="300px">
+                    </figure>                        
+                </div>
+                <div class="img-responsive">
+                    <figure class="img-gallery">
+                        <img src="img/pg_5/img_3.jpg" alt="Imagem de banana" width="300px" height="300px">
+                    </figure>                        
+                </div>
+                <div class="grid-container">
+                    <div>
+                        <h2>BOLO</h2>
+                    </div>
+                    <div>
+                        <h2>Casca de Banana</h2>
+                    </div>                                        
+                </div>    
+                <div class="grid-container-receitas">
+                    <div>
+                        <strong>Ingredientes</strong>
+                        <br>
+                        4 unidades de banana madura
+                        <br>
+                        3 xícaras de farinha de trigo (420 gramas)
+                        <br>
+                        2 xícaras de açúcar (320 gramas)
+                        <br>
+                        2 xícaras de leite (480 mililitros)
+                        <br>
+                        2 colheres de sopa de manteiga amolecida
+                        <br>
+                        2 unidades de ovo
+                        <br>
+                        1 colher de sopa de fermento em pó
+                        <br>
+                        1 colher de chá de canela em pó
+                    </div>
+                    <div>
+                       <strong>Modo de Preparo</strong>
+                       <br>
+                        Comece batendo as claras dos ovos em neve, e reservando na geladeira. Em seguida lave e descasque as bananas.
+                       <br>
+                        Coloque no liquidificador as cascas de banana, as gemas dos ovos, o leite e a manteiga, bata até conseguir uma mistura homogênea.
+                       <br>
+                        Numa tigela misture os ingredientes secos: a farinha, o açúcar, o fermento e a canela. Adicione a mistura do liquidificador aos ingredientes na tigela e mexa bem.
+                       <br>
+                        picar as bananas e adicioná-las à massa, o que irá conferir uma textura diferente. Junte também as claras de ovo e mexa para incorporar.
+                        <br>
+                        Unte uma forma de bolo com manteiga e verta a massa do bolo de casca de banana nela. Coloque a assar no forno a 180ºC durante 45 minutos. Passado esse tempo, retire o bolo, deixe esfriar para desenformar e sirva. Bom apetite!                        
+                    </div>
+                </div>                            
             </aside>
         </div>
-        <div>
-            <img class="footer-img" src="img/pg_5/rodape_pg5.jpg" alt="Imagem de casaca de banana">
+        <div class="img-responsive-footer">
+            <figure class="img-gallery">
+                <img class="footer-img" src="img/pg_5/rodape_pg5.jpg" alt="Imagem de casaca de banana" width="200px" height="500px">
+            </figure>
         </div>
     </main>
     <footer>        
