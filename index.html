@@ -4,62 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="script.js" defer></script>
     <title>Viver Bem</title>
 </head>
 <body>
-    <header class="menu"> 
-        <Nav>
-            <ul style="list-style: none;">
-                <li><a class="a" href="index.html">HOME</a></li>
-                <li><a class="a" href="pg_desperdicio.html">DESPERDÍCIO</a></li>
-                <li><a class="a" href="pg_reaproveitar.html">REAPROVEITAMENTO</a></li>
-                <li><a class="a" href="receitas.html">RECEITAS</a></li>
-            </ul>
-        </Nav>
+    <div class="title">
         <h1>VIVER BEM</h1>
-        <div class="dropdown">
-            <button class="dropdown-btn">CONTATO</button>
-            <div class="dropdown-content">
-              <a target="_blank" href="https://www.facebook.com">Facebook</a>
-              <a target="_blank" href="https://www.instagram.com">Instagram</a>
-              <a target="_blank" href="https://www.twitter.com">Twitter</a>
-            </div>
-          </div>
+    </div> 
+    <header> 
+        <Nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pg_desperdicio.html">DESPERDÍCIO</a></li>
+                <li><a href="pg_reaproveitar.html">REAPROVEITAMENTO</a></li>
+                <li><a href="receitas.html">RECEITAS</a></li>
+            </ul>
+            <ul class="menu menu-right dropdown">
+                <li class="dropdown-btn"><a>CONTATO</a></li>
+                <div class="dropdown-content">
+                  <a target="_blank" href="https://www.facebook.com">Facebook</a>
+                  <a target="_blank" href="https://www.instagram.com">Instagram</a>
+                  <a target="_blank" href="https://www.twitter.com">Twitter</a>
+                </div>
+            </ul>
+            <!-- <div class="dropdown">
+                <button class="dropdown-btn">CONTATO</button>
+                <div class="dropdown-content">
+                  <a target="_blank" href="https://www.facebook.com">Facebook</a>
+                  <a target="_blank" href="https://www.instagram.com">Instagram</a>
+                  <a target="_blank" href="https://www.twitter.com">Twitter</a>
+                </div>
+            </div> -->
+        </Nav>                       
     </header>
     <main>
         <div>
             <aside>
-                <figure>
-                    <img src="img/pg_1/img1.jpg" alt="Imagem de lixo orgânico seco" width="300px" height="400px" >
-                    <img src="img/pg_1/img2.jpg" alt="Imagem alimentos frescos com uma vasilha representando a reutilização" width="300px">
-                    <img src="img/pg_1/img3.jpg" alt="Imagem de cascas de melancia" width="300px">
-                </figure>
                 <h2>
                     REUTILIZE
                 </h2>
-                <p>
-                    Bem-vindo(a) ao nosso site dedicado à alimentação saudável!
-
-                    Acreditamos que uma alimentação equilibrada e nutritiva é essencial para uma vida saudável e feliz. Aqui, você encontrará informações confiáveis, dicas práticas e conteúdo exclusivo para ajudá-lo(a) a adotar hábitos alimentares saudáveis e desfrutar dos benefícios que uma dieta equilibrada pode oferecer.
-
-                    Nosso objetivo é fornecer a você recursos úteis e inspiração para melhorar sua alimentação, independentemente de seu estilo de vida ou restrições alimentares. Se você está em busca de receitas saborosas, conselhos nutricionais, orientações para uma dieta específica ou apenas deseja aprender mais sobre os benefícios de uma alimentação saudável, estamos aqui para ajudar.
-
-                    Ao entrar em contato conosco, terá acesso a conteúdo exclusivo, como receitas criativas, guias de compras saudáveis e dicas práticas para facilitar a transição para uma alimentação mais saudável. Queremos compartilhar com você nossos conhecimentos e experiências para que você possa tomar decisões informadas sobre sua alimentação e alcançar seus objetivos de bem-estar.
-
-                    Valorizamos a interação com nossos visitantes e estamos ansiosos para ouvir suas histórias, dúvidas e conquistas. Portanto, não hesite em entrar em contato conosco. Sua opinião é importante para nós!
-
-                    Lembre-se de que cada pequena mudança em sua alimentação pode fazer uma grande diferença em sua saúde e no bem-estar do planeta. Estamos aqui para fornecer orientações e apoio para ajudá-lo(a) nessa jornada.
-
-                    Explore nosso site, descubra receitas deliciosas e nutricionalmente equilibradas, e junte-se a uma comunidade dedicada a alcançar uma vida mais saudável por meio da alimentação.
-
-                    Estamos empolgados para embarcar nessa jornada com você e ajudá-lo(a) a fazer escolhas alimentares mais conscientes e nutritivas. Vamos juntos explorar o mundo da alimentação saudável e desfrutar dos muitos benefícios que ela oferece!
-
-                    Contate-nos agora e comece sua jornada em direção a uma alimentação saudável e um estilo de vida equilibrado.
-
-                </p>
+                <div class="img-responsive">
+                    <figure class="img-gallery">
+                        <img src="img/pg_1/img1.jpg" alt="Imagem de lixo orgânico seco" width="300px" height="300px">
+                    </figure>      
+                </div>
+                <div class="img-responsive">
+                    <figure class="img-gallery">
+                        <img src="img/pg_1/img2.jpg" alt="Imagem alimentos frescos com uma vasilha representando a reutilização" width="300px" height="300px">
+                    </figure>                        
+                </div>
+                <div class="img-responsive">
+                    <figure class="img-gallery">
+                        <img src="img/pg_1/img3.jpg" alt="Imagem de cascas de melancia" width="300px" height="300px">
+                    </figure>                        
+                </div>
+                <div class="index-paragrafos">
+                    <p>
+                        <strong>Bem-vindo(a)</strong> ao nosso site dedicado à alimentação saudável!
+                        <br>
+                        Acreditamos que uma alimentação equilibrada e nutritiva é essencial para uma vida saudável e feliz. Aqui, você encontrará informações confiáveis, dicas práticas e conteúdo exclusivo para ajudá-lo(a) a adotar hábitos alimentares saudáveis e desfrutar dos benefícios que uma dieta equilibrada pode oferecer.
+                        <br>
+                        Nosso objetivo é fornecer a você recursos úteis e inspiração para melhorar sua alimentação, independentemente de seu estilo de vida ou restrições alimentares. Se você está em busca de receitas saborosas, conselhos nutricionais, orientações para uma dieta específica ou apenas deseja aprender mais sobre os benefícios de uma alimentação saudável, estamos aqui para ajudar.
+                        <br>
+                        Ao entrar em contato conosco, terá acesso a conteúdo exclusivo, como receitas criativas, guias de compras saudáveis e dicas práticas para facilitar a transição para uma alimentação mais saudável. Queremos compartilhar com você nossos conhecimentos e experiências para que você possa tomar decisões informadas sobre sua alimentação e alcançar seus objetivos de bem-estar.
+                        <br>
+                        Valorizamos a interação com nossos visitantes e estamos ansiosos para ouvir suas histórias, dúvidas e conquistas. Portanto, não hesite em entrar em contato conosco. Sua opinião é importante para nós!
+                        <br>
+                        Lembre-se de que cada pequena mudança em sua alimentação pode fazer uma grande diferença em sua saúde e no bem-estar do planeta. Estamos aqui para fornecer orientações e apoio para ajudá-lo(a) nessa jornada.
+                        <br>
+                        Explore nosso site, descubra receitas deliciosas e nutricionalmente equilibradas, e junte-se a uma comunidade dedicada a alcançar uma vida mais saudável por meio da alimentação.
+                        <br>
+                        Estamos empolgados para embarcar nessa jornada com você e ajudá-lo(a) a fazer escolhas alimentares mais conscientes e nutritivas. Vamos juntos explorar o mundo da alimentação saudável e desfrutar dos muitos benefícios que ela oferece!
+                        <br>
+                        Contate-nos agora e comece sua jornada em direção a uma alimentação saudável e um estilo de vida equilibrado.    
+                    </p>
+                </div>
                 <h2>MUDE SEUS HABITOS PARA CUIDAR DO PLANETA</h2>
-                <div class="paragrafos">
+                <div class="index-paragrafos">
                     <p>
                         Em um mundo cada vez mais preocupado com as questões ambientais, é fundamental que todos nós façamos nossa parte para cuidar do planeta. Uma maneira eficaz de contribuir para um futuro sustentável é mudar nossos hábitos diários. Pequenas ações podem fazer uma grande diferença quando se trata de preservar o meio ambiente.
                     </p>
@@ -70,18 +92,27 @@
             </aside>
         </div>
     </main>
-    <footer class="footer">
-        <a href="index.html" class="link">www.viverbem.com.br</a>
-        <ul>
+    <footer>
+        <a href="index.html" class="link">www.viverbem.com.br</a>                
+        <ul class="footer-icon"> 
             <li>
-                <a class="a" target="blank" href = "https://www.facebook.com/"> <img src="img/pg_1/face.jpg" width="16px">FACEBOOK</a>
+                <a class="link" target="blank" href="https://www.facebook.com/"> 
+                    <img src="img/facebook.png" width="35px" height="35px">                        
+                    <pre>Facebook</pre>
+                </a>                            
             </li>
             <li>
-                <a class="a" target="blank" href="https://www.instagram.com/"><img src="img/pg_1/instagram.jpg" width="15px"> INSTAGRAM </a>
+                <a class="link" target="blank" href="https://www.instagram.com/">
+                    <img src="img/instagram.svg" width="35px" height="35px"> 
+                    <pre>Instagram</pre>
+                </a>                    
             </li>
             <li>
-                <a class="a" target="blank" href="https://twitter.com/"> <img src="img/pg_1/twitter.jpg" width="20px"> TWITTER </a>
-            </li>
+                <a class="link" target="blank" href="https://twitter.com/">     
+                    <img src="img/twitter.png" width="35px" height="35px">             
+                    <pre>Twitter</pre>
+                </a>                    
+            </li>               
         </ul>
     </footer>
 </body>
