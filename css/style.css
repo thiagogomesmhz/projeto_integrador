@@ -388,3 +388,72 @@ li.dropdown-btn{
   margin: 10px;
   letter-spacing: 0.3em;
 }
+
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #007bff;
+  color: aliceblue;
+  border: 2px solid #007bff;
+  cursor: pointer;
+  transition: background 0.4s;
+  border-radius: 8px;  
+  margin: auto;
+}
+
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #e9b832;
+  color: aliceblue;
+  border: 2px solid #e9b832;
+  cursor: pointer;
+  transition: background 0.4s;
+  border-radius: 8px;  
+  margin: auto;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control-space-between{
+  margin: 10px 0 20px 0;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+#divButton{
+  /* margin: 20 0; */
+  padding: 20px;
+
+}
+
+#divResult{
+  color: red;
+  width: 100%;
+  margin: auto;  
+  text-align: center;
+}
