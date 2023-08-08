@@ -11,20 +11,39 @@ function enviar(){
     let texto = document.getElementById("txtTexto");
     let mensagemErro = "";
 
-    if (nome.value == "" || nome.value.length < 3 ) {
+    if (nome.value == "" || nome.value.length < 4 ) {
+        nome.classList.add ('erro');
         mensagemErro += "Nome Invalido" + "<br/>";
+    }else {
+        nome.classList.remove ('erro')
     }
-    if(sobrenome.value == "" || sobrenome.value.length < 3 ){
+
+    if(sobrenome.value == "" || sobrenome.value.length < 4 ){
+        sobrenome.classList.add ('erro');
         mensagemErro += "Sobrenome Invalido" + "<br/>";
+    }else {
+        sobrenome.classList.remove ('erro')
     }
+
     if(telefone.value == "" || telefone.value.length < 11 || !TelefoneValido(telefone.value)){
+        telefone.classList.add ('erro');
         mensagemErro += "Telefone Invalido" + "<br/>";
+    }else {
+        telefone.classList.remove ('erro')
     }
+
     if(email.value == "" || email.value.length < 10 || !EmailValido(email.value)){
+        email.classList.add ('erro');
         mensagemErro += "E-Mail Invalido" + "<br/>";
+    }else {
+        email.classList.remove ('erro')
     }
-    if (texto.value == "" || texto.value.length < 3 ) {
+
+    if(texto.value == "" || texto.value.length < 4 ) {
+        texto.classList.add ('erro')
         mensagemErro += "Texto Invalido" + "<br/>";
+    }else {
+        texto.classList.remove ('erro')
     }
 
     result.innerHTML = "";

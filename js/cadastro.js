@@ -4,7 +4,10 @@ function cadastrar(){
     let mensagemErro = "";
 
     if(email.value == "" || email.value.length < 10 || !EmailValido(email.value)){
+        email.classList.add ('erro');
         mensagemErro += "E-Mail Invalido" + "<br/>";
+    }else {
+        email.classList.remove ('erro')
     }
 
     result.innerHTML = "";

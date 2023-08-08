@@ -457,3 +457,8 @@ li.dropdown-btn{
   margin: auto;  
   text-align: center;
 }
+
+.erro{
+  border-color: red;
+
+}
