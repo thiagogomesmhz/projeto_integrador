@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: rgb(255, 255, 255);
+    background:#fffdd0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -110,6 +110,13 @@ nav {
   text-transform: uppercase;
 }
 
+
+Nav li{ 
+
+  border-radius: 10px ; 
+}
+ 
+ 
 .menu {
     display: flex;
     flex-direction: row;
@@ -126,7 +133,8 @@ nav {
   margin-right: 50px;
   text-align: right;
   position: relative;
-    display: inline-block;
+  display: inline-block;
+
 }
 
 .menu li {
@@ -139,6 +147,11 @@ nav {
 
 .menu li:hover {
   background-color: #584944;
+}
+.menu li:hover a{ 
+
+  font-size: 15px; 
+
 }
 
 .menu li.active {
@@ -235,11 +248,15 @@ nav {
     display: flex;
     justify-content: center;
     text-decoration: none;
+    
 }
 
 .link:hover{
   text-decoration: underline;
-}
+  
+} 
+
+
 
 .link_footer{
     text-decoration: none;
