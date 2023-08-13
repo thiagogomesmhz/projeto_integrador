@@ -40,30 +40,35 @@
             </aside>   
             <form onsubmit="return false;">
                 <div class="grid-container">
-
-                    <div class="text-left">Nome</div>
+                    
                     <div class="form-control-space-between">
+                        <span>Nome</span>
                         <input type="text" class="form-control" id="txtNome" placeholder="Digite seu Nome">
+                        <span id="validaNome" class="validationMessageOff">Nome inválido</span>
                     </div>
-    
-                    <div class="text-left">Sobrenome</div>
+                        
                     <div class="form-control-space-between">
+                        <span>Sobrenome</span>
                         <input type="text" class="form-control" id="txtSobrenome" placeholder="Digite seu Sobrenome">
+                        <span id="validaSobrenome" class="validationMessageOff">Sobrenome inválido</span>
                     </div>
-    
-                    <div class="text-left">Telefone</div>
+                        
                     <div class="form-control-space-between">
+                        <span>Telefone</span>
                         <input type="tel" class="form-control" maxlength="14" id="txtTelefone" placeholder="Digite seu Telefone - ex: (11)12345-1234">
+                        <span id="validaTelefone" class="validationMessageOff">Telefone inválido</span>
                     </div>
-    
-                    <div class="text-left">E-mail</div>
+                        
                     <div class="form-control-space-between">
+                        <span>E-mail</span>
                         <input type="email" class="form-control" maxlength="50" id="txtEmail" placeholder="Digite seu E-mail">
+                        <span id="validaEmail" class="validationMessageOff">E-mail inválido</span>
                     </div>
-
-                    <div class="text-left">Dúvidas/Sugestões/Reclamações</div>
+                    
                     <div class="form-control-space-between">
+                        <span>Dúvidas/Sugestões/Reclamações</span>
                         <textarea class="form-control" id="txtTexto" name="txtTexto" rows="4" cols="50" placeholder="Digite seu Texto"></textarea>
+                        <span id="validaTexto" class="validationMessageOff">Campo inválido</span>
                     </div>
 
                     <div id="divButton">
