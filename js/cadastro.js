@@ -1,19 +1,19 @@
 function cadastrar(){
-    let result = document.getElementById("divResult");
+    let countMensagemErro = 0;
+
+    // Busca elementos e zera classes de validação
     let email = document.getElementById("txtEmail");
-    let mensagemErro = "";
+    email.classList.remove("form-control-invalid");    
+    let validaEmail = document.getElementById("validaEmail");    
+    validaEmail.className = "validationMessageOff";
 
     if(email.value == "" || email.value.length < 10 || !EmailValido(email.value)){
-        email.classList.add ('erro');
-        mensagemErro += "E-Mail Invalido" + "<br/>";
-    }else {
-        email.classList.remove ('erro')
+        validaEmail.className = 'validationMessageCenter';
+        email.className += ' form-control-invalid';
+        countMensagemErro += 1;
     }
 
-    result.innerHTML = "";
-    if(mensagemErro!=""){
-        result.innerHTML+="<span style='text-align:center'>" + mensagemErro + "</span>";            
-    }else{
+    if(countMensagemErro == 0){
         clearCadastro();
         if (confirm("Cadastro Efetivado com sucesso") == true) {
             window.location.href = "index.html";
@@ -22,6 +22,7 @@ function cadastrar(){
 }
 
 function clearCadastro(){
+    // Busca elemento e Limpa o conteudo
     let email = document.getElementById("txtEmail");    
     email.value = "";
 }    
