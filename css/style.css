@@ -443,6 +443,7 @@ li.dropdown-btn{
 .form-control {
   display: block;
   width: 100%;
+  margin: 10px 0;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
